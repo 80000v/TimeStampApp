@@ -17,13 +17,24 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        // 使用 debug 签名签 Release APK，确保 GitHub Actions 构建的 APK 可直接安装
+        getByName("debug") {
+            // 使用 Android 默认 debug keystore，无需额外配置
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig = signingConfigs.getByName("debug")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+        debug {
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
