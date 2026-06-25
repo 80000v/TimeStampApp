@@ -208,7 +208,7 @@ class MainActivity : AppCompatActivity() {
             
             val contentValues = ContentValues().apply {
                 put(MediaStore.Images.Media.DISPLAY_NAME, fileName)
-                put(MediaStore.Images.MIME_TYPE, "image/jpeg")
+                put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
                 put(MediaStore.Images.Media.DATE_ADDED, timestamp / 1000)
                 put(MediaStore.Images.Media.DATE_MODIFIED, timestamp / 1000)
                 
