@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Clock circle outline -->
+    <path
+        android:pathData="M54,18C33.6,18 17.4,34.2 17.4,54.6C17.4,75 33.6,91.2 54,91.2C74.4,91.2 90.6,75 90.6,54.6C90.6,34.2 74.4,18 54,18Z"
+        android:strokeWidth="3.5"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000" />
+    <!-- Hour hand (short) -->
+    <path
+        android:pathData="M54,36L54,56L68,56"
+        android:strokeWidth="3.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+    <!-- Minute hand (long) -->
+    <path
+        android:pathData="M54,42L54,72"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+    <!-- Center dot -->
+    <path
+        android:pathData="M51,54a3,3 0,1 0,6 0a3,3 0,1 0,-6 0"
+        android:fillColor="#FFFFFF" />
+    <!-- Top tick (12 o'clock) -->
+    <path
+        android:pathData="M54,22L54,28"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <!-- Right tick (3 o'clock) -->
+    <path
+        android:pathData="M86,54.6L80,54.6"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <!-- Bottom tick (6 o'clock) -->
+    <path
+        android:pathData="M54,87.2L54,81.2"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <!-- Left tick (9 o'clock) -->
+    <path
+        android:pathData="M22,54.6L28,54.6"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+</vector>
